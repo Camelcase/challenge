@@ -5,7 +5,7 @@
 class SmsUtils
   # cuts text into pieces including suffix
   # could potentielly be broken up and be turned into a recursive method
-  def split_into_chunks(text, chunksize = 160 )
+  def split_into_chunks(text, chunksize = 160)
     suffix = ' - Part X of Y'
     suffix_lentgh = suffix.size
     continue = 1
@@ -40,10 +40,10 @@ class SmsUtils
     end
     chunks
   end
-  
+
   def generate_code(size = 360)
     charset = %w[2 3 4 6 7 9 A C D E F G H J K M N P Q R T V W X Y Z]
-      (0...size).map { charset.to_a[rand(charset.size)] }.join
+    (0...size).map { charset.to_a[rand(charset.size)] }.join
   end
 end
 # rubocop:enable Metrics/AbcSize, Metrics/MethodLength
