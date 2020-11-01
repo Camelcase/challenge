@@ -1,6 +1,6 @@
 # challenge
 
-install run "bundle install" to install depencies
+install run "bundle install" to install dependencies
 
 start specs with "rspec spec/sms_utils.rb"
 
